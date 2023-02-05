@@ -35,6 +35,10 @@ public class QueueUsingArray {
             front++;
         }
         rear++;
+        // if(rear == data.length){
+        //     rear = 0;
+        // }
+        rear = (rear + 1) % data.length;
         data[rear] = elem;
         size++;
     }
@@ -56,6 +60,10 @@ public class QueueUsingArray {
 
         int ans = data[front];
         front++;
+        // if(front == data.length){
+        //     front = 0;
+        // }
+        front = (front + 1) % data.length;
         size--;
         if(size== 0){
             front = -1;
