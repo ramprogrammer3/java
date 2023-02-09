@@ -18,8 +18,6 @@ public class QueueUse {
 
         while(!q.isEmpty()){
             System.out.print(q.dequeue() + " ");
-        }
-
-        
+        }   
     }
 }
