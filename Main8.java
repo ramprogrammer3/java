@@ -30,7 +30,5 @@ public class Main8 {
         sc.close();
 
 
-
-
     }
 }
